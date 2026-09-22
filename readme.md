@@ -2,9 +2,12 @@ aloha
 
 # Module 0 学习总结
 
-通过本次作业，我主要学习了以下几个方面：
+通过本次作业，我主要学习了以下三个方面：
 
-1. 学会了 Git 的基本操作，包括 `clone`、`add`、`commit`，以及创建、切换和合并分支；也了解了如何通过 commit hash、detached HEAD 和 `reflog` 查看和恢复历史版本。
-2. 熟悉了 GitHub 的基本工作流程，包括使用 GitHub Classroom 获取远程仓库，以及通过 `push` 和 `pull` 在本地仓库和 GitHub 远程仓库之间同步代码，并练习了解决分支合并时的冲突。
-3. 学会了配置 Python 虚拟环境，并使用 Hugging Face 加载预训练 ResNet-18 模型。通过 PyTorch 对 MNIST 数据进行预处理，将灰度图片转换为 RGB 并调整为 224×224，随后完成模型推理和准确率计算。
-4. 了解了代码仓库管理中的一些基本规范，例如使用 `.gitignore` 避免将数据集、模型权重和其他不需要的文件提交到仓库。
+1. Git 和 GitHub 的基本操作。学会了从 GitHub Classroom clone 远程仓库，在本地使用 `add` 和 `commit` 保存修改，并通过 `push` 将本地提交同步到 GitHub 远程仓库。
+
+2. Git 的分支、合并和版本历史管理。练习了创建并切换 `for_fun` 和 `main` 分支，将一个分支 merge 到另一个分支，并处理 merge conflict。同时，我学会了通过 commit hash checkout 到之前的历史 commit，在 detached HEAD 状态下查看旧版本，再 checkout 回到最新的 commit。这让我更清楚地理解了 Git 的分支和版本历史机制。
+
+3. Python 环境、Hugging Face 和模型推理。我学会了配置 Hugging Face 运行环境，使用预训练的 ResNet 模型在 MNIST 数据集上进行 inference。由于 ResNet 的输入要求，我使用 PyTorch 将 MNIST 的灰度图转换为 RGB，并 resize 到模型需要的尺寸，然后计算模型的 accuracy。这个实验也让我理解了 pretrained model 在未 finetune 的新数据集上可能表现较差。
+
+此外，还了解了代码仓库管理的基本规范，例如使用 `.gitignore`，避免将 dataset 和 model weights 提交到 GitHub。
