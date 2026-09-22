@@ -2,13 +2,8 @@ aloha
 
 # Module 0 学习总结
 
-通过本次作业，学习了 Git、GitHub 和 Hugging Face 的基本使用方法。
+通过本次作业，我学习了三个方面的内容：
 
-## Git 和 GitHub
-
-学会了使用 `git clone` 将远程仓库克隆到本地，使用 `git add` 和 `git commit` 保存代码修改，并使用 `git push` 将本地提交推送到 GitHub，以及如何创建和切换分支，如何将其他分支合并到主分支。学习了如何使用 `git log` 查看提交历史，使用 commit hash 回到以前的提交，以及如何从 detached HEAD 状态切换回最新的主分支。
-
-## Hugging Face 和模型推理
-
-学习了如何使用 Hugging Face Transformers 加载预训练的 ResNet-18 模型，并使用该模型对 MNIST 测试集进行推理。
-
+1. 学会了使用 Git 和 GitHub 完成仓库克隆、提交修改以及推送代码。
+2. 学会了创建、切换和合并分支，并使用 commit hash、detached HEAD 和 reflog 查看与切换历史版本。
+3. 学会了使用 Hugging Face 加载预训练 ResNet-18，将 MNIST 灰度图片转换为 RGB 并调整到 224×224，然后运行推理和计算准确率。
